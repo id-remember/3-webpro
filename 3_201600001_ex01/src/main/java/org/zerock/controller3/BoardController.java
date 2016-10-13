@@ -54,8 +54,8 @@ public class BoardController {
     service.regist(board);
 
     rttr.addFlashAttribute("msg", "success");
-    //return "redirect:/board/listAll";
-    return "/board/success";
+    return "redirect:/board/listAll";
+    //return "/board/success";
   }
 
   @RequestMapping(value = "/listAll", method = RequestMethod.GET)
